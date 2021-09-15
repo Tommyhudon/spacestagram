@@ -1,0 +1,13 @@
+.image-info-wrapper {
+  display: flex;
+}
+
+.app-title {
+  margin: 0;
+  padding-right: 32px;
+}
+
+.header {
+  display: flex;
+}
+
