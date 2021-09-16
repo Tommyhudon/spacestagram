@@ -1,3 +1,35 @@
+.image-container {
+  padding: 10px;
+  margin: 16px;
+  border: white;
+  background-color: #181818;
+  border-radius: 4px;
+
+ -webkit-animation-duration: 4s;
+ animation-duration: 4s;
+ -webkit-animation-fill-mode: both;
+ animation-fill-mode: both;
+}
+
+.media {
+  object-fit: fill;
+  border-radius: 4px;
+  min-height: 614px;
+  width: 614px;
+  border: none;
+}
+
+.like-icon {
+  display: flex;
+  margin-top: 16px;
+  width: 50px;
+  justify-content: center;
+}
+
+.like-icon:hover {
+ cursor: pointer;
+ transform: scale(1.2);
+}
 
 .finger-icon {
   animation: MoveUpDown 1s linear infinite;
@@ -9,12 +41,17 @@
   padding-top: 50px;
 }
 
-.media {
-  object-fit: fill;
-  border-radius: 4px;
-  min-height: 614px;
+.copyright {
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+  align-self: start;
+  margin-bottom: 8px;
+  margin-left: 8px;
+}
+
+.image-info-container {
   width: 614px;
-  border: none;
 }
 
 @keyframes MoveUpDown {

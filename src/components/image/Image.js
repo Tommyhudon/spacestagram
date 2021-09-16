@@ -17,15 +17,18 @@ const ImageList = props => {
         {!props.data.url.includes('youtube') &&
           <img className='media' src= {props.data.url} alt='Not found :(' ></img>
         }
-        <div className='like-icon' onClick={e => setLike(!like)}>
-          {!like && 
-            <FaRegHeart  />
-          }
-          {like && 
-            <FaHeart  color='#ed4956'/>
-          }
+        <div className='image-info-container'>
+          <div className='like-icon' onClick={e => setLike(!like)}>
+            {!like && 
+              <FaRegHeart  />
+            }
+            {like && 
+              <FaHeart  color='#ed4956'/>
+            }
+          </div>
+          <p>{props.data.explanation}</p>
         </div>
-        <p>{props.data.explanation}</p>
+        
       </div>
         
       
