@@ -9,6 +9,14 @@
   padding-top: 50px;
 }
 
+.media {
+  object-fit: fill;
+  border-radius: 4px;
+  min-height: 614px;
+  width: 614px;
+  border: none;
+}
+
 @keyframes MoveUpDown {
   0%, 100% {
    top: 45px;

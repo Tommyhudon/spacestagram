@@ -24,7 +24,9 @@ const ImageList = props => {
   return (
     <div className='image-wrapper'>
       {!loading &&
-        <Image data={imageData}></Image>
+        imageData.map((image, key) => (
+          <Image data={image} key={key}></Image>
+        ))
       }
       {loading &&
         <Loader></Loader>

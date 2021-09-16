@@ -38,13 +38,6 @@
   margin-left: 8px;
 }
 
-img {
-  object-fit: fill;
-  border-radius: 4px;
-  min-height: 614px;
-  width: 614px;
-}
-
 p {
   font-size: calc(10px + 1vmin);
   text-align: justify;
