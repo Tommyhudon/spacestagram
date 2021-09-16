@@ -3,16 +3,10 @@ import DatePicker from "react-datepicker";
 import { useState } from "react"
 import "react-datepicker/dist/react-datepicker.css";
 import './wrapper.css'
-import { useEffect } from 'react/cjs/react.development';
 
 function Wrapper() {
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
-
-  useEffect(() => {
-    startDate.setDate(startDate.getDate() - 7);
-    setStartDate(startDate);
-  }, [])
 
   return (
     <div>
