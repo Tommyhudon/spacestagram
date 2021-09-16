@@ -1,0 +1,19 @@
+
+.finger-icon {
+  animation: MoveUpDown 1s linear infinite;
+  position: absolute;
+  right: 51%;
+}
+
+.no-image-text {
+  padding-top: 50px;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+   top: 45px;
+  }
+  50% {
+    top: 60px;
+  }
+}
