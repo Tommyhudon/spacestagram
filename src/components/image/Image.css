@@ -27,7 +27,7 @@
 
 .like-icon:hover {
  cursor: pointer;
- transform: scale(1.5);
+ transform: scale(1.2);
 }
 .copyright {
   display: flex;
