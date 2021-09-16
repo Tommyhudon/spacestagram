@@ -1,21 +1,35 @@
-import Image from '../image/Image'
+import ImageList from '../image/ImageList'
 import DatePicker from "react-datepicker";
 import { useState } from "react"
 import "react-datepicker/dist/react-datepicker.css";
 import './wrapper.css'
+import { useEffect } from 'react/cjs/react.development';
 
 function Wrapper() {
   const [startDate, setStartDate] = useState(new Date());
+  const [endDate, setEndDate] = useState(new Date());
+
+  useEffect(() => {
+    startDate.setDate(startDate.getDate() - 7);
+    setStartDate(startDate);
+  }, [])
 
   return (
     <div>
       <header className='header'>
         <h3 className='app-title'>Spacestagram</h3>
-        <div>
+        <div className='date-picker-container'>
           <DatePicker 
             className = 'date-picker'
             selected={startDate} 
-            onChange={(date) => setStartDate(date)} 
+            onChange={(dates) => {
+              const [start, end] = dates;
+              setStartDate(start);
+              setEndDate(end);
+            }}
+            startDate={startDate}
+            endDate={endDate}
+            selectsRange
             popperPlacement="top"
             dateFormat="yyyy/MM/dd"
             filterDate = {(date) => {
@@ -24,7 +38,7 @@ function Wrapper() {
           />
         </div>
       </header>
-      <Image date = {startDate}></Image>
+      <ImageList date = {startDate} endDate = {endDate}></ImageList>
     </div>
   )
 }

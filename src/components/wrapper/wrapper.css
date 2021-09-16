@@ -11,3 +11,8 @@
   display: flex;
 }
 
+.date-picker-container > div > div.react-datepicker__input-container input {
+   width: 145px;
+   cursor: pointer;
+}
+
