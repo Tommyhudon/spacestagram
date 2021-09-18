@@ -10,14 +10,14 @@ const ImageList = props => {
   return (
     <div>
       <div className= 'image-container fadeIn'>
-        <span className='copyright'>{props.data.copyright}</span>
-        {props.data.url.includes('youtube') &&
-          <iframe title='youtube-video' className='media' src={props.data.url} alt='video not found :('></iframe>
+        <span className='copyright-text'>{props.data.copyright}</span>
+        {props.data.media_type === 'video' &&
+          <iframe title='video' className='media' src={props.data.url} alt='video not found :('></iframe>
         }
-        {!props.data.url.includes('youtube') &&
+        {props.data.media_type === 'image' &&
           <img className='media' src= {props.data.url} alt='Not found :(' ></img>
         }
-        <div className='image-info-container'>
+        <div>
           <div className='like-icon' onClick={e => setLike(!like)}>
             {!like && 
               <FaRegHeart  />
@@ -26,7 +26,8 @@ const ImageList = props => {
               <FaHeart  color='#ed4956'/>
             }
           </div>
-          <p>{props.data.explanation}</p>
+          <p className='image-explanation'>{props.data.explanation}</p>
+          <p className='date-text'>{props.data.date}</p>
         </div>
         
       </div>

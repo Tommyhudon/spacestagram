@@ -1,9 +1,10 @@
 .image-container {
-  padding: 10px;
-  margin: 16px;
+  margin: 16px 0;
   border: white;
   background-color: #181818;
   border-radius: 4px;
+  width: 614px;
+
 
  -webkit-animation-duration: 4s;
  animation-duration: 4s;
@@ -41,17 +42,29 @@
   padding-top: 50px;
 }
 
-.copyright {
+.copyright-text {
   display: flex;
   font-size: 16px;
   font-weight: 600;
-  align-self: start;
-  margin-bottom: 8px;
-  margin-left: 8px;
+  margin: 0 8px 8px;
+  padding-top: 8px;
+  text-align: start;
+  min-height: 30px;
 }
 
-.image-info-container {
-  width: 614px;
+.date-text {
+  font-size: 12px;
+  text-align: end;
+  padding: 0 16px 8px 0;
+  letter-spacing: .2px;
+  color: #b3b3b3;
+  font-weight: 600;
+}
+
+.image-explanation {
+  padding: 0 16px;
+  font-size: 16px;
+  text-align: justify;
 }
 
 @keyframes MoveUpDown {
