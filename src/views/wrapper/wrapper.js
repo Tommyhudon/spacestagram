@@ -1,4 +1,4 @@
-import ImageList from '../image/ImageList'
+import ImageList from '../../components/imageList/ImageList'
 import DatePicker from "react-datepicker";
 import { useState } from "react"
 import "react-datepicker/dist/react-datepicker.css";

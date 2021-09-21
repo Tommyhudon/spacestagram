@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import './ImageList.css'
 import Loader from '../loader/loader';
-import Image from './Image'
+import Image from './image/Image'
 
 const ImageList = props => {
   const [imageData, setImageData] = useState([]);

@@ -3,8 +3,6 @@
   border: white;
   background-color: #181818;
   border-radius: 4px;
-  width: 614px;
-
 
  -webkit-animation-duration: 4s;
  animation-duration: 4s;
@@ -13,11 +11,12 @@
 }
 
 .media {
-  object-fit: fill;
+  object-fit: cover;
   border-radius: 4px;
-  min-height: 614px;
-  width: 614px;
+  width: 100%;
   border: none;
+  max-height: 800px;
+  min-height: 600px;
 }
 
 .like-icon {
@@ -73,5 +72,16 @@
   }
   50% {
     top: 60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .media {
+    max-height: 465px;
+    min-height: 375px;
+  }
+
+  .image-explanation {
+    font-size: 13px;
   }
 }

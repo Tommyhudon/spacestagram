@@ -1,8 +1,9 @@
 .image-wrapper {
   display: flex;
-  width: 750px;
   flex-direction: column;
   align-items: center;
+  max-width: 714px;
+  width: 100%
 }
 
 @-webkit-keyframes fadeIn {
@@ -18,4 +19,10 @@
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
+}
+
+@media screen and (max-width: 999px) {
+  .image-wrapper {
+    max-width: 600px;
+  }
 }

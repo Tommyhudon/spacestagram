@@ -1,5 +1,5 @@
 import './App.css';
-import Wrapper from './components/wrapper/wrapper'
+import Wrapper from './views/wrapper/wrapper'
 
 function App() {  
   return (
