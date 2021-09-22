@@ -2,12 +2,12 @@
 ### Project Setup
 
 ```bash
-yarn install
+npm install
 ```
 
 ### Compiles and hot-reloads for development
 
 ```bash
-yarn run serve
+npm run serve
 ```
 
