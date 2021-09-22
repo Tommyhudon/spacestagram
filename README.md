@@ -1,4 +1,4 @@
-# Spacestagram - Shopify Challenge Winter Frontend Internship
+# Spacestagram - Shopify Challenge
 
 ### Heroku Link
 
