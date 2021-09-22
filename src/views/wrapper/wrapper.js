@@ -9,7 +9,7 @@ function Wrapper() {
   const [endDate, setEndDate] = useState(new Date());
 
   return (
-    <div>
+    <div className='wrapper'>
       <header className='header'>
         <h3 className='app-title'>Spacestagram</h3>
         <div className='date-picker-container'>

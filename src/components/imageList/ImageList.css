@@ -21,7 +21,7 @@
   animation-name: fadeIn;
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 1000px) {
   .image-wrapper {
     max-width: 600px;
   }
